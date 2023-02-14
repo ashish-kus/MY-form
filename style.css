@@ -12,7 +12,10 @@
     margin:0;
     padding: 0;
     font-family: Inter;
-    box-sizing: border-box;
+}
+
+::placeholder {
+  color: rgba(54, 53, 53, 0.438);
 }
 
 .main-wrapper{
@@ -29,7 +32,7 @@ form {
 
   .form-input {
     width: 100%;
-    padding: 13px 22px;
+    padding: 5px 12px;
     border-radius: 5px;
     border: 1px solid var(--primery);
     background: #FFFFFF;
@@ -64,9 +67,6 @@ form {
     display: flex;
   }
   
-
-
-
   /* Add styles for the form header */
   h3 {
     background-color: var(--primery);
@@ -80,33 +80,33 @@ form {
 
 
 
-
-
-
   /* ////// */
   table {
     border-collapse: collapse;
     width: 100%;
   }
 
-  table th,
-  table td {
-    border: 1px solid #ddd;
+  table th{
+    border: 1px solid #00000052;
     color: var(--primery);
     border-radius: 4px;
-    padding: 8px;
+    
     text-align: left;
+  }
+  table td{
+    border: 1px solid #00000052; 
+    color: var(--primery);
     
   }
-
+  
   table th,
-  table .formtd {
-    /* background-color: var(--primery); */
+  table td .formtd {
+    padding: 5px 5px;
     font-weight: bold;
-    font-family:sans-serif;
     height: 20px;
   }
 
+ 
   table .input {
     border:none;
     font-size: var(--f16);
@@ -114,7 +114,9 @@ form {
     text-decoration: bold;
     background-color: var(--primery-background);
     border-radius: 4px;
-    padding: 0px;
+    padding: 0 5px;
+    /* margin: 2px; */
+    /* border: 1px solid rgba(0, 0, 0, 0.377); */
     outline: none;
     width: 100%;
     height: 30px;
@@ -122,12 +124,15 @@ form {
 }
 
 table .input:focus{
-  /* background-color: #000; */
-  /* border: 2px solid var(--primery); */
   outline: var(--primery);
 }
+
 
 .pbg{
   background-color: var(--primery);
   color: var(--white);
+}
+
+.h3-upload-btn{
+  float: right;
 }

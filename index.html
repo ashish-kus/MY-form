@@ -69,16 +69,40 @@
                   </select>
               </div>
           </div>
-      
+
           <div class="flex">
+            <div class="flex-element">
+              <label for="specialization" class="form-label">Advertisement no. :</label>
+                  <select id="School" name="post" class="form-input">
+                      <option value="">Select a Advertisement no.</option>
+                      <option value="post1">Post 1</option>
+                      <option value="post2">Post 2</option>
+                      <option value="post3">Post 3</option>
+                  </select>
+            </div>
+            <div class="flex-element">
+              <label for="Photograph" class="form-label">Upload a Passport size photograph</label>
+                  <input type="file" id="1-photograph" name="Photograph" class="form-input" />
+            </div>
+          </div>
+      
+          <!-- <div class="flex">
+            <div class="flex-element">
+              <label for="specialization" class="form-label">Field(s) of Specialization :</label>
+              <select id="School" name="post" class="form-input">
+                  <option value="">Select a Specialization</option>
+                  <option value="post1">Post 1</option>
+                  <option value="post2">Post 2</option>
+                  <option value="post3">Post 3</option>
+              </select>
+
               <div class="flex-element">
                   <label for="Photograph" class="form-label">Upload a Passport size photograph</label>
                   <input type="file" id="1-photograph" name="Photograph" class="form-input" />
               </div>
-          </div>
+          </div> -->
       </section>
       
-
         <section class="step-2">
           <h3>2.	Details  of Educational Qualifications (from Graduation onwards to final degree) (please attach self-attested copies)</h3>
           <table>
@@ -86,46 +110,51 @@
                   <th>Degree/ Exam (with discipline)</th>
                   <th>University/College/Board</th>
                   <th>Specialization/Subjects</th>
-                  <th>Date of Passing</th>
+                  <th>Year of Passing</th>
                   <th>Percentage of Marks/ Grade</th>
                   <th>Class/Division/Grade</th>
+                  <th> Self-attested copies</th>
                 </tr>
                 <tr>
-                  <td class="formtd">Graduation</td>
-                  <td><input type="text" class="input" id="apli-grad-UCB"></td>
-                  <td><input type="text" class="input" id=""></td>
-                  <td><input type="text" class="input"></td>
-                  <td><input type="text" class="input"></td>
-                  <td><input type="text" class="input"></td>
+                  <th class="formtd">Graduation</th>
+                  <td><input type="text" class="input" id="apli-grad-UCB" placeholder="GBU / AICTE"></td>
+                  <td><input type="text" class="input" id="" placeholder="Specialization/Subjects" ></td>
+                  <td><input type="text" class="input" placeholder="2010"></td>
+                  <td><input type="text" class="input"  placeholder="Marks/ Grade"></td>
+                  <td><input type="text" class="input" placeholder="Division/Grade"></td>
+                  <td><input type="file" class="input"></td>
                 </tr>
                 <tr>
-                  <td class="formtd">Post Graduation</td>
-                  <td><input type="text" class="input" id="apli-pgrad-UCB"></td>
-                  <td><input type="text" class="input"></td>
-                  <td><input type="text" class="input"></td>
-                  <td><input type="text" class="input"></td>
-                  <td><input type="text" class="input"></td>
+                  <th class="formtd">Post Graduation</th>
+                  <td><input type="text" class="input" id="apli-pgrad-UCB" placeholder="GBU / AICTE"></td>
+                  <td><input type="text" class="input" placeholder="Specialization/Subjects"></td>
+                  <td><input type="text" class="input"  placeholder="2010"></td>
+                  <td><input type="text" class="input"  placeholder="Marks/ Grade"></td>
+                  <td><input type="text" class="input" placeholder="Division/Grade"></td>
+                  <td><input type="file" class="input"></td>
                 </tr>   <tr>
-                  <td class="formtd">M. Phil</td>
-                  <td><input type="text" class="input" id="apli-mphil-UCB"></td>
-                  <td><input type="text" class="input"></td>
-                  <td><input type="text" class="input"></td>
-                  <td><input type="text" class="input"></td>
-                  <td><input type="text" class="input"></td>
+                  <th class="formtd">M. Phil</th>
+                  <td><input type="text" class="input" id="apli-mphil-UCB" placeholder="GBU / AICTE"></td>
+                  <td><input type="text" class="input" placeholder="Specialization/Subjects"></td>
+                  <td><input type="text" class="input"  placeholder="2010"></td>
+                  <td><input type="text" class="input"  placeholder="Marks/ Grade"> </td>
+                  <td><input type="text" class="input" placeholder="Division/Grade"></td>
+                  <td><input type="file" class="input"></td>
                 </tr>   <tr>
-                  <td class="formtd">Ph.D</td>
-                  <td><input type="text" class="input" id="apli-phd-UCB"></td>
-                  <td><input type="text" class="input"></td>
-                  <td><input type="text" class="input"></td>
-                  <td><input type="text" class="input"></td>
-                  <td><input type="text" class="input"></td>
+                  <th class="formtd">Ph.D</th>
+                  <td><input type="text" class="input" id="apli-phd-UCB" placeholder="GBU / AICTE"></td>
+                  <td><input type="text" class="input" placeholder="Specialization/Subjects"></td>
+                  <td><input type="text" class="input"  placeholder="2010" ></td>
+                  <td><input type="text" class="input"  placeholder="Marks/ Grade"></td>
+                  <td><input type="text" class="input" placeholder="Division/Grade"></td>
+                  <td><input type="file" class="input"></td>
                 </tr>
           </table>
         </section>
 
         <section class="step-3">
-          <h3>3. Details of Ph. D Degree (Please Attach an abstract of your Ph. D Work and furnish the following details)</h3>
-          <table style="width: 100%;">
+          <h3>3. Details of Ph. D Degree (Please Attach an abstract of your Ph. D Work and furnish the following details)<span class="h3-upload-btn"><input type="file"> </span></h3>
+          <table >
               <tr>
                   <th>i.</th>
                   <th>Ph. D Thesis Title</th>
@@ -185,90 +214,96 @@
                   <th>Last pay , Pay Band and Pay Grade</th>
   
                 </tr>
+               
                 <tr>
+                  <td><input type="text" class="input" placeholder="position held previous"></td>
+                  <td><input type="text" class="input" placeholder="Organization/ Institute name"></td>
+                  <td><input type="date" name="joining-date" class="input"></td>
+                  <td><input type="date"  class="input"></td>
+                  <td><input type="number" class="input"></td>
                   <td><input type="text" class="input"></td>
-                  <td><input type="text" class="input"></td>
-                  <td><input type="text" class="input"></td>
-                  <td><input type="text" class="input"></td>
-                  <td><input type="text" class="input"></td>
-                  <td><input type="text" class="input"></td>
-                  <td><input type="text" class="input"></td>
+                  <td><input type="number" class="input" placeholder="₹ X,XX,XXX"></td>
                 </tr>
                 <tr>
+                  <td><input type="text" class="input" placeholder="position held previous"></td>
+                  <td><input type="text" class="input" placeholder="Organization/ Institute name"></td>
+                  <td><input type="date" class="input"></td>
+                  <td><input type="date"  class="input"></td>
                   <td><input type="text" class="input"></td>
                   <td><input type="text" class="input"></td>
-                  <td><input type="text" class="input"></td>
-                  <td><input type="text" class="input"></td>
-                  <td><input type="text" class="input"></td>
-                  <td><input type="text" class="input"></td>
-                  <td><input type="text" class="input"></td>
+                  <td><input type="number" class="input" placeholder="₹ X,XX,XXX"></td>
                 </tr>
                 <tr>
+                  <td><input type="text" class="input" placeholder="position held previous"></td>
+                  <td><input type="text" class="input" placeholder="Organization/ Institute name"></td>
+                  <td><input type="date" name="joining-date" class="input"></td>
+                  <td><input type="date"  class="input"></td>
                   <td><input type="text" class="input"></td>
                   <td><input type="text" class="input"></td>
-                  <td><input type="text" class="input"></td>
-                  <td><input type="text" class="input"></td>
-                  <td><input type="text" class="input"></td>
-                  <td><input type="text" class="input"></td>
-                  <td><input type="text" class="input"></td>
+                  <td><input type="number" class="input" placeholder="₹ X,XX,XXX"></td>
                 </tr>
                 <tr>
+                  <td><input type="text" class="input" placeholder="position held previous"></td>
+                  <td><input type="text" class="input" placeholder="Organization/ Institute name"></td>
+                  <td><input  type="date" name="joining-date" class="input"></td>
+                  <td><input type="date"  class="input"></td>
                   <td><input type="text" class="input"></td>
                   <td><input type="text" class="input"></td>
-                  <td><input type="text" class="input"></td>
-                  <td><input type="text" class="input"></td>
-                  <td><input type="text" class="input"></td>
-                  <td><input type="text" class="input"></td>
-                  <td><input type="text" class="input"></td>
+                  <td><input type="number" class="input" placeholder="₹ X,XX,XXX"></td>
                 </tr>
-                <tr>
-                  <td><input type="text" class="input"></td>
-                  <td><input type="text" class="input"></td>
-                  <td><input type="text" class="input"></td>
-                  <td><input type="text" class="input"></td>
-                  <td><input type="text" class="input"></td>
-                  <td><input type="text" class="input"></td>
-                  <td><input type="text" class="input"></td>
-                </tr>
-                <tr>
-                  <td><input type="text" class="input"></td>
-                  <td><input type="text" class="input"></td>
-                  <td><input type="text" class="input"></td>
-                  <td><input type="text" class="input"></td>
-                  <td><input type="text" class="input"></td>
-                  <td><input type="text" class="input"></td>
-                  <td><input type="text" class="input"></td>
-                </tr>
+                
               </table>
               <h4>* Please specify, if the position is concurrently with Ph. D or  Post Ph. D</h4>
         </section>
+
         <section class="step-5">
           <h3>5. Teaching Experience</h3>
           <table style="width: 100%;">
               <tr>
                   <th>Course Taught</th>
-                  <th>Level UG/PGy</th>
+                  <th>Level UG/PG</th>
                   <th>Institute  </th>
-                  <th>Duration</th>
+                  <th>Duration (in months)</th>
                 </tr>
                 <tr>
-                  <td><input type="text" class="input"></td>
-                  <td><input type="text" class="input"></td>
-                  <td><input type="text" class="input"></td>
-                  <td><input type="text" class="input"></td>
+                  <td><input type="text" class="input" placeholder="Course name"></td>
+                  <td>
+                    <select name="" id="">
+                        <option value="free">Default</option>
+                        <option value="UG level">UG level</option>
+                        <option value="PG level">PG level</option>
+                        <option value="Both">Both</option>
+                    </section>
+                  </td>
+                  <td><input type="text" class="input" placeholder="Institute name"></td>
+                  <td><input type="number" class="input" placeholder="6 months"></td>
                   
                 </tr>
                 <tr>
-                  <td><input type="text" class="input"></td>
-                  <td><input type="text" class="input"></td>
-                  <td><input type="text" class="input"></td>
-                  <td><input type="text" class="input"></td>
+                  <td><input type="text" class="input" placeholder="Course name"></td>
+                  <td>
+                    <select name="" id="">
+                        <option value="free">Default</option>
+                        <option value="UG level">UG level</option>
+                        <option value="PG level">PG level</option>
+                        <option value="Both">Both</option>
+                    </section>
+                  </td>
+                  <td><input type="text" class="input" placeholder="Institute name"></td>
+                  <td><input type="number" class="input" placeholder="6 months"></td>
                 </tr>
                 <tr>
-                  <td><input type="text" class="input"></td>
-                  <td><input type="text" class="input"></td>
-                  <td><input type="text" class="input"></td>
-                  <td><input type="text" class="input"></td>
+                  <td><input type="text" class="input"  placeholder="Course name"></td>
+                  <td>
+                    <select name="" id="">
+                        <option value="free">Default</option>
+                        <option value="UG level">UG level</option>
+                        <option value="PG level">PG level</option>
+                        <option value="Both">Both</option>
+                    </section>
+                  </td>
+                  <td><input type="text" class="input" placeholder="Institute name"></td>
+                  <td><input type="number" class="input" placeholder="6 months"></td>
                 </tr>
                 
               </table>
@@ -280,30 +315,54 @@
               <tr>
                   <th>Name of research Laboratory</th>
                   <th>Organization</th>
-                  <th>Period</th>
+                  <th>Period (in months)</th>
                   <th>Position</th>
                   <th>Nature of work</th>
                 </tr>
                 <tr>
-                  <td><input type="text" class="input"></td>
-                  <td><input type="text" class="input"></td>
-                  <td><input type="text" class="input"></td>
-                  <td><input type="text" class="input"></td>
+                  <td><input type="text" class="input" placeholder="Laboratory name"></td>
+                  <td><input type="text" class="input" placeholder="Organization name"></td>
+                  <td><input type="number" class="input"  placeholder="6 months"></td>
+                  <td><select id="School" name="post" class="input">
+                    <option value="">Select a position</option>
+                    <option value="post1">Clinical research specialists</option>
+                    <option value="post2">Interns</option>
+                    <option value="post3">Student researchers</option>
+                    <option value="post3">Lab technicians</option>
+                    <option value="post3">Grant administrators</option>
+                    <option value="post3">General administrative support staff</option>
+                  </select></td>
                   <td><input type="text" class="input"></td>
                  </tr>
                 <tr>
-                  <td><input type="text" class="input"></td>
-                  <td><input type="text" class="input"></td>
-                  <td><input type="text" class="input"></td>
-                  <td><input type="text" class="input"></td>
+                  <td><input type="text" class="input" placeholder="Laboratory name"></td>
+                  <td><input type="text" class="input"  placeholder="Organization name"> </td>
+                  <td><input type="number" class="input"  placeholder="6 months"></td>
+                  <td><select id="School" name="post" class="input">
+                    <option value="">Select a position</option>
+                    <option value="post1">Clinical research specialists</option>
+                    <option value="post2">Interns</option>
+                    <option value="post3">Student researchers</option>
+                    <option value="post3">Lab technicians</option>
+                    <option value="post3">Grant administrators</option>
+                    <option value="post3">General administrative support staff</option>
+                  </select></td>
                   <td><input type="text" class="input"></td>
   
                 </tr>
                 <tr>
-                  <td><input type="text" class="input"></td>
-                  <td><input type="text" class="input"></td>
-                  <td><input type="text" class="input"></td>
-                  <td><input type="text" class="input"></td>
+                  <td><input type="text" class="input" placeholder="Laboratory name"></td>
+                  <td><input type="text" class="input" placeholder="Organization name"></td>
+                  <td><input type="number" class="input"  placeholder="6 months"></td>
+                  <td><select id="School" name="post" class="input">
+                    <option value="">Select a position</option>
+                    <option value="post1">Clinical research specialists</option>
+                    <option value="post2">Interns</option>
+                    <option value="post3">Student researchers</option>
+                    <option value="post3">Lab technicians</option>
+                    <option value="post3">Grant administrators</option>
+                    <option value="post3">General administrative support staff</option>
+                  </select></td>
                   <td><input type="text" class="input"></td>
   
                 </tr>
@@ -390,8 +449,8 @@
                   
               </table>
         </section>
-        <section>
-              <div class="table">
+
+        <section class="step-8">
         <h3>8.	List of Conferences  attended and paper(s) presented (Attach Proof of presentations)  *</h3>
         <table>
             <tr><th>Name of Conference</th>
@@ -436,12 +495,13 @@
                     <td><input type="text" class="input"></td> 
                     <td><input type="text" class="input"></td>
                 </tr> </table>
-                </div>
+               
                 <b>* Submit details of your publications on a separate sheet as required in item (3) of Check List.</b>
  
         </section>
-        <section>
-          <div class="table">
+
+        <section class="step-9-15">
+          
             <h3>
 
             </h3>
@@ -480,49 +540,49 @@
                     <td><input type="text" class="input"></td>
                     <td><input type="text" class="input"></td>
                 </tr>
-            </table>
-            <table>
+                
                 <tr>
-                    <th>11.</th>
-                    <th>Details of Prizes/Medals/ Awards/ Honours: (Attach Details in a Separate Sheet)</th>
-                    <td><input type="file"></td>
+                  <th>11.</th>
+                  <th>Details of Prizes/Medals/ Awards/ Honours: (Attach Details in a Separate Sheet)</th>
+                  <td><input type="file"></td>
                 </tr>
-            </table>
-            <table>
+                
                 <tr>
-                    <th>12.</th>
-                    <th>Relevant details of Special Training (s) /Assignment(s) if any </th>
-                    <td><input type="text" class="input"></td>
-    
+                  <th>12.</th>
+                  <th>Relevant details of Special Training (s) /Assignment(s) if any </th>
+                  <td><input type="text" class="input"></td>
+                  
+                  
+                  
                 </tr>
                 <tr>
-                    <th>13.</th>
-                    <th>Membership/ Fellowship of Professional Societies, if Any </th>
-                    <td><input type="text" class="input"></td>
+                  <th>13.</th>
+                  <th>Membership/ Fellowship of Professional Societies, if Any </th>
+                  <td><input type="text" class="input"></td>
                 </tr>
-            </table>
-            <table>
+                
+                
+                
                 <tr>
-                    <th>14.</th>
+                  <th>14.</th>
                     <th>Extra –Curricular Activities/ Administrative Responsibilities handled: (Attach Details in a Separate
-                        Sheet)</th>
+                      Sheet)</th>
                         <td><input type="file"></td>
                         
-                </tr>
-            </table>
-            <table>
-                <tr>
-                    <th>15.</th>
-                    <th>Any other information in favour of the candidature of the applicant: (Attach Details in a Separate
-                        Sheet)</th>
-                        <td><input type="file"></td>
-                </tr>
-            </table>
-        </div>
-     
+                      </tr>
+                      
+                    
+                        <tr>
+                          <th>15.</th>
+                          <th>Any other information in favour of the candidature of the applicant: (Attach Details in a Separate
+                            Sheet)</th>
+                            <td><input type="file"></td>
+                          </tr>
+                        </table>
+              
         </section>
        
-        <section class="test-17">
+        <section class="step-16">
           <h3>16. In-house Research Projects </h3>
           <table style="width: 100%;">
               <tr>
@@ -565,6 +625,7 @@
                 </tr>
           </table>
         </section>
+
         <section class="step-17">
           <h3>
             17.	Sponsored Research Project 
@@ -611,6 +672,7 @@
         </table>
 
         </section>
+
         <section>
           <h3>18. Consultancy Projects</h3>
         <table>
@@ -658,8 +720,7 @@
 
         </section>
 
-        <section>
-          <div class="table-19">
+        <section class="step-19">
             <h3>19.Title of Patents Awarded/Applied for
             </h3>
             <hr>
@@ -699,30 +760,38 @@
                     <td><input type="text" class="input"></td>
                 </tr> <br>
             </table>
-        
         </section>
-        <section>
+
+        <section class="step-20">
           <h3>20.Personal Details </h3>
           <table>
               <tr>
                   <th>(a)</th>
                   <th>Date of birth</th>
-                  <td><input type="date" class="input"></td>
+                  <td>
+                    <div class="flex">
+
+                    <input type="date" id="dob" name="dob">
+                    
+                    <input type="file" id="dob_files" name="files" multiple><br>
+                    </div>
+                    </td>
               </tr>
               <tr>
                   <th>(b)</th>
                   <th>Gender</th>
-                  <td><input type="text" class="input"></td>
+                  <td><input type="radio" name="gender" value="male"> Male  <input type="radio" name="gender" value="female"> Female
+</td>
               </tr>
               <tr>
                   <th>(c)</th>
                   <th>Marital Status</th>
-                  <td><input type="text" class="input"></td>
+                  <td><input type="text" class="input" placeholder="Marital Status"></td>
               </tr>
               <tr>
                   <th>(d)</th>
                   <th>Nationality </th>
-                  <td><input type="text" class="input"></td>
+                  <td><input type="text" class="input" placeholder="Nationality"></td>
               </tr>
               <tr>
                   <th>(e)</th>
@@ -735,43 +804,46 @@
                           <option value="OBC(Non-Creamy Layer)">OBC(Non-Creamy Layer)</option>
                           <option value="SC/ST">SC/ST</option>
                           <option value="PWD(person with disability)">PWD(person with disability)</option>
-                      </select>
+                      </select> <br>
+                      <label for="files">Files:</label>
+                    <input type="file" id="Category_file" name="files" multiple>
                   </td>
               </tr>
               <tr>
                   <th>(f)</th>
                   <th>Father’s/ Husband’s Name </th>
-                  <td><input type="text" class="input"></td>
+                  <td><input type="text" class="input" placeholder="Father's/Husband’s Name"></td>
               </tr>
               <tr>
                   <th>(g)</th>
                   <th>Permanent Address</th>
-                  <td><input type="text" class="input"> <Pincode:->Pincode:-</Pincode:-></td>
+                  <td><input type="text" class="input" placeholder="Permanent Address"> </td>
               </tr>
               <tr>
                   <th>(h)</th>
                   <th>Address for Correcpondence </th>
-                  <td><input type="text" class="input"> <Pincode:->Pincode:-</Pincode:-></td>
+                  <td><input type="text" class="input" placeholder="Address for Correcpondence" class="input"> </td>
   
               </tr>
               <tr>
                   <th>(i)</th>
                   <th>Email Id</th>
-                  <td aria-required="true"><input type="email">Write your Email id .</td>
+                  <td aria-required="true"></label><input type="email" placeholder="Email Addresses" class="input" required></td>
               </tr>
               <tr>
                   <th>(j)</th>
                   <th>Phone number with STD code </th>
-                  <td aria-required="true"><input type="number"></td>
+                  <td aria-required="true"><input type="tel" placeholder="Landline with STD code " class="input"></td>
               </tr>
               <tr>
                   <th>(k)</th>
                   <th>Mobile Number</th>
-                  <td aria-required="true"><input type="Number"></td>
+                  <td aria-required="true"><input type="tel" placeholder="Mobile no."required class="input"></td>
               </tr>
           </table>
         </section>
-        <section>
+
+        <section class="step-21">
           <h3>21. General </h3>
           <table>
               <tr>
@@ -800,6 +872,10 @@
               </tr>
           </table>
           <hr>
+        </section>
+
+        <section class="step-22">
+            
           <table>
             <h3> </h3>
               <tr>
@@ -822,9 +898,6 @@
           </table>
         </section>
 
-        <section>
-
-        </section>
 
       </form>
     </div>
