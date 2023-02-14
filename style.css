@@ -1,0 +1,133 @@
+@import url('https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700&display=swap');
+:root{
+--primery: #85325c;
+--primery-background: #f8f7f8;
+--white: #FFF;
+--text: #000;
+--f16: 16px;
+--f12: 12px:
+}
+
+*{
+    margin:0;
+    padding: 0;
+    font-family: Inter;
+    box-sizing: border-box;
+}
+
+.main-wrapper{
+  margin: 2%;
+}
+
+/* Add styles for the form */
+form {
+    margin: auto;
+    padding: 20px;
+    background-color: var(--primery-background);
+    border-radius: 10px;
+  }
+
+  .form-input {
+    width: 100%;
+    padding: 13px 22px;
+    border-radius: 5px;
+    border: 1px solid var(--primery);
+    background: #FFFFFF;
+    font-weight: 500;
+    font-size: 16px;
+    color: var(--text);
+    outline: none;
+    resize: none;
+  }
+  .form-input:focus {
+    border-color: var(--primery);
+    border: 2px solid var(--primery);
+    box-shadow: 0px 3px 8px rgba(0, 0, 0, 0.05);
+  }
+  .form-label {
+    color: var(--text);
+    font-weight: 600;
+    font-size: 18px;
+    padding:15px 15px 5px 0;
+    display: inline-block;
+    width: 100%;
+    
+  }
+
+  .flex-element{
+    width: 100%;
+    margin: 0 10px 0 0;
+    
+  }
+
+  .flex{
+    display: flex;
+  }
+  
+
+
+
+  /* Add styles for the form header */
+  h3 {
+    background-color: var(--primery);
+    color: var(--white);
+    padding: 10px 5px;
+    border-radius: 5px;
+    text-align:left;
+    margin:50px 0 20px 0;
+    font-size:120%;
+  }
+
+
+
+
+
+
+  /* ////// */
+  table {
+    border-collapse: collapse;
+    width: 100%;
+  }
+
+  table th,
+  table td {
+    border: 1px solid #ddd;
+    color: var(--primery);
+    border-radius: 4px;
+    padding: 8px;
+    text-align: left;
+    
+  }
+
+  table th,
+  table .formtd {
+    /* background-color: var(--primery); */
+    font-weight: bold;
+    font-family:sans-serif;
+    height: 20px;
+  }
+
+  table .input {
+    border:none;
+    font-size: var(--f16);
+    font-weight: 500;
+    text-decoration: bold;
+    background-color: var(--primery-background);
+    border-radius: 4px;
+    padding: 0px;
+    outline: none;
+    width: 100%;
+    height: 30px;
+    box-sizing: border-box;
+}
+
+table .input:focus{
+  /* background-color: #000; */
+  /* border: 2px solid var(--primery); */
+  outline: var(--primery);
+}
+
+.pbg{
+  background-color: var(--primery);
+  color: var(--white);
+}

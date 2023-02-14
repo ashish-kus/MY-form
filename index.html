@@ -1,0 +1,833 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="stylesheet" href="style.css" />
+    <title>Document</title>
+  </head>
+  <body>
+     <header>
+        <div class="logo"><img src="/resources/GBU-logo.png" alt="GBU-LOGO"></div>
+    </header>
+
+    <div class="main-wrapper">
+      <form action="#">
+        <section class="step-1">
+          <!-- <p>For Office Use: Application No.<p> -->
+          <h3>1. Advertisment number</h3>
+          <label for="name" class="form-label">Name of the Applicant (In Capital Letters) :</label>
+          <div class="flex">
+              <!-- <label for="First Name" class="form-label">First name: </label> -->
+              <input type="text" id="Fname" name="Fname" class="form-input flex-element" placeholder="First name" required />
+      
+              <!-- <label for="First Name" class="form-label">Middle name: </label> -->
+              <input type="text" id="Mname" name="Mname" class="form-input flex-element" placeholder="Middle name" />
+      
+              <!-- <label for="First Name" class="form-label">Last name: </label> -->
+              <input type="text" id="Lname" name="Lname" class="form-input flex-element" placeholder="Last name" required />
+          </div>
+          <div class="flex">
+              <div class="flex-element">
+                  <label for="post" class="form-label">Post Applied for :</label>
+                  <select id="post" name="post" class="form-input">
+                      <option value="">Select a Post</option>
+                      <option value="post1">Post 1</option>
+                      <option value="post2">Post 2</option>
+                      <option value="post3">Post 3</option>
+                  </select>
+              </div>
+      
+              <div class="flex-element">
+                  <label for="post" class="form-label">Department :</label>
+                  <select id="Department" name="post" class="form-input">
+                      <option value="">Select a Department</option>
+                      <option value="post1">Post 1</option>
+                      <option value="post2">Post 2</option>
+                      <option value="post3">Post 3</option>
+                  </select>
+              </div>
+          </div>
+          <div class="flex">
+              <div class="flex-element">
+                  <label for="post" class="form-label">School :</label>
+                  <select id="School" name="post" class="form-input">
+                      <option value="">Select a School</option>
+                      <option value="post1">Post 1</option>
+                      <option value="post2">Post 2</option>
+                      <option value="post3">Post 3</option>
+                  </select>
+              </div>
+              <div class="flex-element">
+                  <label for="specialization" class="form-label">Field(s) of Specialization :</label>
+                  <select id="School" name="post" class="form-input">
+                      <option value="">Select a Specialization</option>
+                      <option value="post1">Post 1</option>
+                      <option value="post2">Post 2</option>
+                      <option value="post3">Post 3</option>
+                  </select>
+              </div>
+          </div>
+      
+          <div class="flex">
+              <div class="flex-element">
+                  <label for="Photograph" class="form-label">Upload a Passport size photograph</label>
+                  <input type="file" id="1-photograph" name="Photograph" class="form-input" />
+              </div>
+          </div>
+      </section>
+      
+
+        <section class="step-2">
+          <h3>2.	Details  of Educational Qualifications (from Graduation onwards to final degree) (please attach self-attested copies)</h3>
+          <table>
+              <tr>
+                  <th>Degree/ Exam (with discipline)</th>
+                  <th>University/College/Board</th>
+                  <th>Specialization/Subjects</th>
+                  <th>Date of Passing</th>
+                  <th>Percentage of Marks/ Grade</th>
+                  <th>Class/Division/Grade</th>
+                </tr>
+                <tr>
+                  <td class="formtd">Graduation</td>
+                  <td><input type="text" class="input" id="apli-grad-UCB"></td>
+                  <td><input type="text" class="input" id=""></td>
+                  <td><input type="text" class="input"></td>
+                  <td><input type="text" class="input"></td>
+                  <td><input type="text" class="input"></td>
+                </tr>
+                <tr>
+                  <td class="formtd">Post Graduation</td>
+                  <td><input type="text" class="input" id="apli-pgrad-UCB"></td>
+                  <td><input type="text" class="input"></td>
+                  <td><input type="text" class="input"></td>
+                  <td><input type="text" class="input"></td>
+                  <td><input type="text" class="input"></td>
+                </tr>   <tr>
+                  <td class="formtd">M. Phil</td>
+                  <td><input type="text" class="input" id="apli-mphil-UCB"></td>
+                  <td><input type="text" class="input"></td>
+                  <td><input type="text" class="input"></td>
+                  <td><input type="text" class="input"></td>
+                  <td><input type="text" class="input"></td>
+                </tr>   <tr>
+                  <td class="formtd">Ph.D</td>
+                  <td><input type="text" class="input" id="apli-phd-UCB"></td>
+                  <td><input type="text" class="input"></td>
+                  <td><input type="text" class="input"></td>
+                  <td><input type="text" class="input"></td>
+                  <td><input type="text" class="input"></td>
+                </tr>
+          </table>
+        </section>
+
+        <section class="step-3">
+          <h3>3. Details of Ph. D Degree (Please Attach an abstract of your Ph. D Work and furnish the following details)</h3>
+          <table style="width: 100%;">
+              <tr>
+                  <th>i.</th>
+                  <th>Ph. D Thesis Title</th>
+                  <td><input type="file" class="input"></td>
+              </tr>
+                <tr>
+                  <th>iii.</th>
+                  <th>Research area of Ph. D Thesis work</th>
+                  <td><input type="file" class="input"></td>
+                 
+                </tr>
+                <tr>
+                  <th>iii.</th>
+                  <th>Date of joining/registration of Ph. D Programme </th>
+                  <td><input type="file" class="input"></td>
+                  
+                </tr>  
+                 <tr>
+                  <td class="formtd">iv.</td>
+                  <th>Date of Submission of Ph. D Thesis </th>
+                  <td><input type="file" class="input"></td>
+                </tr>  
+                 <tr>
+                  <td class="formtd">v.   </td>
+                  <th>Date of completion of Ph. D Programme ></th>
+                  <td><input type="file" class="input"></td>
+                </tr>
+                <tr>
+                  <th>vi.</th>
+                  <th>Name(s) of Thesis Supervisor(s)</th>
+                  <td><input type="file" class="input"></td>
+              </tr>
+              <tr>
+                  <th>vii.</th>
+                  <th>Part time/ Full Time</th>
+                  <td><input type="file" class="input"></td>
+              </tr>
+              <tr>
+                  <th>viii.</th>
+                  <th>Institution / University</th>
+                  <td><input type="file" class="input"></td>
+              </tr>
+          </table>
+  
+        </section>
+
+        <section class="step-4">
+          <h3>4.	Details of Employment/Work Experience (Please attach self-attested copies of experience certificates)</h4>
+          <table style="width: 100%;">
+              <tr>
+                  <th>Position Held*</th>
+                  <th>Organization/ Institute</th>
+                  <th>Date of Joining </th>
+                  <th>Date of Leaving</th>
+                  <th>Total period  </th>
+                  <th>Nature of Duties </th>
+                  <th>Last pay , Pay Band and Pay Grade</th>
+  
+                </tr>
+                <tr>
+                  <td><input type="text" class="input"></td>
+                  <td><input type="text" class="input"></td>
+                  <td><input type="text" class="input"></td>
+                  <td><input type="text" class="input"></td>
+                  <td><input type="text" class="input"></td>
+                  <td><input type="text" class="input"></td>
+                  <td><input type="text" class="input"></td>
+                </tr>
+                <tr>
+                  <td><input type="text" class="input"></td>
+                  <td><input type="text" class="input"></td>
+                  <td><input type="text" class="input"></td>
+                  <td><input type="text" class="input"></td>
+                  <td><input type="text" class="input"></td>
+                  <td><input type="text" class="input"></td>
+                  <td><input type="text" class="input"></td>
+                </tr>
+                <tr>
+                  <td><input type="text" class="input"></td>
+                  <td><input type="text" class="input"></td>
+                  <td><input type="text" class="input"></td>
+                  <td><input type="text" class="input"></td>
+                  <td><input type="text" class="input"></td>
+                  <td><input type="text" class="input"></td>
+                  <td><input type="text" class="input"></td>
+                </tr>
+                <tr>
+                  <td><input type="text" class="input"></td>
+                  <td><input type="text" class="input"></td>
+                  <td><input type="text" class="input"></td>
+                  <td><input type="text" class="input"></td>
+                  <td><input type="text" class="input"></td>
+                  <td><input type="text" class="input"></td>
+                  <td><input type="text" class="input"></td>
+                </tr>
+                <tr>
+                  <td><input type="text" class="input"></td>
+                  <td><input type="text" class="input"></td>
+                  <td><input type="text" class="input"></td>
+                  <td><input type="text" class="input"></td>
+                  <td><input type="text" class="input"></td>
+                  <td><input type="text" class="input"></td>
+                  <td><input type="text" class="input"></td>
+                </tr>
+                <tr>
+                  <td><input type="text" class="input"></td>
+                  <td><input type="text" class="input"></td>
+                  <td><input type="text" class="input"></td>
+                  <td><input type="text" class="input"></td>
+                  <td><input type="text" class="input"></td>
+                  <td><input type="text" class="input"></td>
+                  <td><input type="text" class="input"></td>
+                </tr>
+              </table>
+              <h4>* Please specify, if the position is concurrently with Ph. D or  Post Ph. D</h4>
+        </section>
+        <section class="step-5">
+          <h3>5. Teaching Experience</h3>
+          <table style="width: 100%;">
+              <tr>
+                  <th>Course Taught</th>
+                  <th>Level UG/PGy</th>
+                  <th>Institute  </th>
+                  <th>Duration</th>
+                </tr>
+                <tr>
+                  <td><input type="text" class="input"></td>
+                  <td><input type="text" class="input"></td>
+                  <td><input type="text" class="input"></td>
+                  <td><input type="text" class="input"></td>
+                  
+                </tr>
+                <tr>
+                  <td><input type="text" class="input"></td>
+                  <td><input type="text" class="input"></td>
+                  <td><input type="text" class="input"></td>
+                  <td><input type="text" class="input"></td>
+                </tr>
+                <tr>
+                  <td><input type="text" class="input"></td>
+                  <td><input type="text" class="input"></td>
+                  <td><input type="text" class="input"></td>
+                  <td><input type="text" class="input"></td>
+                </tr>
+                
+              </table>
+        </section>
+
+        <section class="step-6">
+          <h3>6.	Experience in a Research Laboratory </h3>
+          <table style="width: 100%;">
+              <tr>
+                  <th>Name of research Laboratory</th>
+                  <th>Organization</th>
+                  <th>Period</th>
+                  <th>Position</th>
+                  <th>Nature of work</th>
+                </tr>
+                <tr>
+                  <td><input type="text" class="input"></td>
+                  <td><input type="text" class="input"></td>
+                  <td><input type="text" class="input"></td>
+                  <td><input type="text" class="input"></td>
+                  <td><input type="text" class="input"></td>
+                 </tr>
+                <tr>
+                  <td><input type="text" class="input"></td>
+                  <td><input type="text" class="input"></td>
+                  <td><input type="text" class="input"></td>
+                  <td><input type="text" class="input"></td>
+                  <td><input type="text" class="input"></td>
+  
+                </tr>
+                <tr>
+                  <td><input type="text" class="input"></td>
+                  <td><input type="text" class="input"></td>
+                  <td><input type="text" class="input"></td>
+                  <td><input type="text" class="input"></td>
+                  <td><input type="text" class="input"></td>
+  
+                </tr>
+              </table>
+        </section>
+
+        <section class="step-7">
+          <h3>7.	Particulars of  referred journals carrying your Research Papers *</h3>
+          <table style="width: 100%;">
+              <tr><th>Papers Published </th>
+              </tr>
+           </table>
+          <table style="width: 100%;">
+              <tr>
+                  <th>Name of Journal </th>
+                  <th>Impact Factor </th>
+                  <th>No. of Papers Published</th>
+                  <th>Broad Areas</th>
+                </tr>
+                <tr>
+                  
+                </tr>
+          </table>
+                <table>
+                  <tr>
+                    <th>(a)	International </th>
+                  </tr>
+                </table>
+                <table>
+                <tr>
+                  <td><input type="text" class="input"></td>
+                  <td><input type="text" class="input"></td>
+                  <td><input type="text" class="input"></td>
+                  <td><input type="text" class="input"></td>
+                 </tr>
+                <tr>
+                  <td><input type="text" class="input"></td>
+                  <td><input type="text" class="input"></td>
+                  <td><input type="text" class="input"></td>
+                  <td><input type="text" class="input"></td>
+  
+                </tr>
+                <tr>
+                  <td><input type="text" class="input"></td>
+                  <td><input type="text" class="input"></td>
+                  <td><input type="text" class="input"></td>
+                  <td><input type="text" class="input"></td>
+  
+                </tr>
+                <tr>
+                  <td><input type="text" class="input"></td>
+                  <td><input type="text" class="input"></td>
+                  <td><input type="text" class="input"></td>
+                  <td><input type="text" class="input"></td>
+                </tr>
+                
+                </tr>
+          </table>
+          <table>
+                <tr>
+                  <th>(b)	National </th>
+                </tr>
+          </table>
+          <table>
+                <tr>
+                  <td><input type="text" class="input"></td>
+                  <td><input type="text" class="input"></td>
+                  <td><input type="text" class="input"></td>
+                  <td><input type="text" class="input"></td>
+                </tr>
+                <tr>
+                  <td><input type="text" class="input"></td>
+                  <td><input type="text" class="input"></td>
+                  <td><input type="text" class="input"></td>
+                  <td><input type="text" class="input"></td>
+                </tr>
+                <tr>
+                  <td><input type="text" class="input"></td>
+                  <td><input type="text" class="input"></td>
+                  <td><input type="text" class="input"></td>
+                  <td><input type="text" class="input"></td>
+                </tr>
+                <tr>
+                  
+              </table>
+        </section>
+        <section>
+              <div class="table">
+        <h3>8.	List of Conferences  attended and paper(s) presented (Attach Proof of presentations)  *</h3>
+        <table>
+            <tr><th>Name of Conference</th>
+            <th>When and Where </th></tr> </table>
+            <table>
+                <tr>
+                    <th>(a)International </th>
+                  </tr>
+            </table>
+            <table>
+                <tr>
+                    <td><input type="text" class="input"></td>
+                    <td><input type="text" class="input"></td>
+                </tr>
+                <tr>
+                    <td><input type="text" class="input"></td> 
+                    <td><input type="text" class="input"></td>
+                </tr>
+                <tr>
+                    <td><input type="text" class="input"></td> 
+                    <td><input type="text" class="input"></td>
+                </tr>
+                <tr>
+                    <td><input type="text" class="input"></td> 
+                    <td><input type="text" class="input"></td>
+                </tr> </table>
+                <table>
+                    <tr>
+                        <th>(b)	National  </th>
+                      </tr>
+                </table>
+                <table>
+                <tr>
+                    <td><input type="text" class="input"></td> 
+                    <td><input type="text" class="input"></td>
+                </tr>
+                <tr>
+                    <td><input type="text" class="input"></td> 
+                    <td><input type="text" class="input"></td>
+                </tr>
+                <tr>
+                    <td><input type="text" class="input"></td> 
+                    <td><input type="text" class="input"></td>
+                </tr> </table>
+                </div>
+                <b>* Submit details of your publications on a separate sheet as required in item (3) of Check List.</b>
+ 
+        </section>
+        <section>
+          <div class="table">
+            <h3>
+
+            </h3>
+            
+            <table>
+                <tr>
+                    <th >9.</th>
+                    <th>Number of other Published works
+                        (Attach Details in a Separate Sheet)
+                    </th>
+                    <th>Technical Reports</th>
+                    <th>Monographs</th>
+                    <th>Books</th>
+                </tr>
+                <tr>
+                    <th>10.</th>
+                    <th>Number of Thesis/ Dissertations Supervised
+                        (Attach Details in a Separate Sheet)
+    
+                    </th>
+                    <th>Awarded</th>
+                    <th>Submitted</th>
+                    <th>In progress</th>
+                </tr>
+                <tr>
+                    <th> </th>
+                    <th>Ph.d</th>
+                    <td><input type="text" class="input"></td>
+                    <td><input type="text" class="input"></td>
+                    <td><input type="text" class="input"></td>
+                </tr>
+                <tr>
+                  <th> </th>
+                    <th>M. Phil/M. Tech/M.E./M. Sc./M.A.</th>
+                    <td><input type="text" class="input"></td>
+                    <td><input type="text" class="input"></td>
+                    <td><input type="text" class="input"></td>
+                </tr>
+            </table>
+            <table>
+                <tr>
+                    <th>11.</th>
+                    <th>Details of Prizes/Medals/ Awards/ Honours: (Attach Details in a Separate Sheet)</th>
+                    <td><input type="file"></td>
+                </tr>
+            </table>
+            <table>
+                <tr>
+                    <th>12.</th>
+                    <th>Relevant details of Special Training (s) /Assignment(s) if any </th>
+                    <td><input type="text" class="input"></td>
+    
+                </tr>
+                <tr>
+                    <th>13.</th>
+                    <th>Membership/ Fellowship of Professional Societies, if Any </th>
+                    <td><input type="text" class="input"></td>
+                </tr>
+            </table>
+            <table>
+                <tr>
+                    <th>14.</th>
+                    <th>Extra –Curricular Activities/ Administrative Responsibilities handled: (Attach Details in a Separate
+                        Sheet)</th>
+                        <td><input type="file"></td>
+                        
+                </tr>
+            </table>
+            <table>
+                <tr>
+                    <th>15.</th>
+                    <th>Any other information in favour of the candidature of the applicant: (Attach Details in a Separate
+                        Sheet)</th>
+                        <td><input type="file"></td>
+                </tr>
+            </table>
+        </div>
+     
+        </section>
+       
+        <section class="test-17">
+          <h3>16. In-house Research Projects </h3>
+          <table style="width: 100%;">
+              <tr>
+                  <th>Title (mention PI/Co-PI/Member)</th>
+                  <th>Funding Agency</th>
+                  <th>Completed/On going </th>
+                  <th>Period</th>
+                  <th>Institute where Research<br> carried out </th>
+                  <th>Amount</th>
+                </tr>
+                <tr>
+                  <td><input type="text" class="input"></td>
+                  <td><input type="text" class="input"></td>
+                  <td><input type="text" class="input"></td>
+                  <td><input type="text" class="input"></td>
+                  <td><input type="text" class="input"></td>
+                  <td><input type="text" class="input"></td>
+                </tr>
+                <tr>
+                  <td><input type="text" class="input"></td>
+                  <td><input type="text" class="input"></td>
+                  <td><input type="text" class="input"></td>
+                  <td><input type="text" class="input"></td>
+                  <td><input type="text" class="input"></td>
+                  <td><input type="text" class="input"></td>
+                </tr>   <tr>
+                  <td><input type="text" class="input"></td>
+                  <td><input type="text" class="input"></td>
+                  <td><input type="text" class="input"></td>
+                  <td><input type="text" class="input"></td>
+                  <td><input type="text" class="input"></td>
+                  <td><input type="text" class="input"></td>
+                </tr>   <tr>
+                  <td><input type="text" class="input"></td>
+                  <td><input type="text" class="input"></td>
+                  <td><input type="text" class="input"></td>
+                  <td><input type="text" class="input"></td>
+                  <td><input type="text" class="input"></td>
+                  <td><input type="text" class="input"></td>
+                </tr>
+          </table>
+        </section>
+        <section class="step-17">
+          <h3>
+            17.	Sponsored Research Project 
+        </h3>
+        <table style="width: 100%;">
+            <tr>
+                <th>Title (mention PI/Co-PI/Member)</th>
+                <th>Funding Agency</th>
+                <th>Completed/On going </th>
+                <th>Period</th>
+                <th>Institute where Research<br> carried out </th>
+                <th>Amount</th>
+              </tr>
+              <tr>
+                <td><input type="text" class="input"></td>
+                <td><input type="text" class="input"></td>
+                <td><input type="text" class="input"></td>
+                <td><input type="text" class="input"></td>
+                <td><input type="text" class="input"></td>
+                <td><input type="text" class="input"></td>
+              </tr>
+              <tr>
+                <td><input type="text" class="input"></td>
+                <td><input type="text" class="input"></td>
+                <td><input type="text" class="input"></td>
+                <td><input type="text" class="input"></td>
+                <td><input type="text" class="input"></td>
+                <td><input type="text" class="input"></td>
+              </tr>   <tr>
+                <td><input type="text" class="input"></td>
+                <td><input type="text" class="input"></td>
+                <td><input type="text" class="input"></td>
+                <td><input type="text" class="input"></td>
+                <td><input type="text" class="input"></td>
+                <td><input type="text" class="input"></td>
+              </tr>   <tr>
+                <td><input type="text" class="input"></td>
+                <td><input type="text" class="input"></td>
+                <td><input type="text" class="input"></td>
+                <td><input type="text" class="input"></td>
+                <td><input type="text" class="input"></td>
+                <td><input type="text" class="input"></td>
+              </tr>
+        </table>
+
+        </section>
+        <section>
+          <h3>18. Consultancy Projects</h3>
+        <table>
+            <tr>
+                <th>Title (mention your responsibility)</th>
+                <th>Funding Agency</th>
+                <th>Completed/ On going</th>
+                <th>Period</th>
+                <th>Institute where carried out</th>
+                <th>Amount</th>
+            </tr>
+            <tr>
+                <td><input type="text" class="input"></td>
+                <td><input type="text" class="input"></td>
+                <td><input type="text" class="input"></td>
+                <td><input type="text" class="input"></td>
+                <td><input type="text" class="input"></td>
+                <td><input type="text" class="input"></td>
+            </tr>
+            <tr>
+                <td><input type="text" class="input"></td>
+                <td><input type="text" class="input"></td>
+                <td><input type="text" class="input"></td>
+                <td><input type="text" class="input"></td>
+                <td><input type="text" class="input"></td>
+                <td><input type="text" class="input"></td>
+            </tr>
+            <tr>
+                <td><input type="text" class="input"></td>
+                <td><input type="text" class="input"></td>
+                <td><input type="text" class="input"></td>
+                <td><input type="text" class="input"></td>
+                <td><input type="text" class="input"></td>
+                <td><input type="text" class="input"></td>
+            </tr>
+            <tr>
+                <td><input type="text" class="input"></td>
+                <td><input type="text" class="input"></td>
+                <td><input type="text" class="input"></td>
+                <td><input type="text" class="input"></td>
+                <td><input type="text" class="input"></td>
+                <td><input type="text" class="input"></td>
+            </tr>
+        </table>
+
+        </section>
+
+        <section>
+          <div class="table-19">
+            <h3>19.Title of Patents Awarded/Applied for
+            </h3>
+            <hr>
+            <table style="width: 100%;">
+                <tr>
+                    <th>
+                        (a) Awarded : (Give Patent Number)
+                    </th>
+                    <th>
+                        Year
+                    </th>
+                    <th>Patenting Authority </th>
+                    <th>Single/ Multiple Patenters</th>
+                </tr>
+                <tr>
+                    <td><input type="text" class="input"></td>
+                    <td><input type="text" class="input"></td>
+                    <td><input type="text" class="input"></td>
+                    <td><input type="text" class="input"></td>
+                </tr>
+                <tr>
+                    <td><input type="text" class="input"></td>
+                    <td><input type="text" class="input"></td>
+                    <td><input type="text" class="input"></td>
+                    <td><input type="text" class="input"></td>
+                </tr>
+                <tr>
+                    <th>(b) Applied for </th>
+                    <td><input type="text" class="input"></td>
+                    <td><input type="text" class="input"></td>
+                    <td><input type="text" class="input"></td>
+                </tr>
+                <tr>
+                    <td><input type="text" class="input"></td>
+                    <td><input type="text" class="input"></td>
+                    <td><input type="text" class="input"></td>
+                    <td><input type="text" class="input"></td>
+                </tr> <br>
+            </table>
+        
+        </section>
+        <section>
+          <h3>20.Personal Details </h3>
+          <table>
+              <tr>
+                  <th>(a)</th>
+                  <th>Date of birth</th>
+                  <td><input type="date" class="input"></td>
+              </tr>
+              <tr>
+                  <th>(b)</th>
+                  <th>Gender</th>
+                  <td><input type="text" class="input"></td>
+              </tr>
+              <tr>
+                  <th>(c)</th>
+                  <th>Marital Status</th>
+                  <td><input type="text" class="input"></td>
+              </tr>
+              <tr>
+                  <th>(d)</th>
+                  <th>Nationality </th>
+                  <td><input type="text" class="input"></td>
+              </tr>
+              <tr>
+                  <th>(e)</th>
+                  <th>Category</th>
+                  <td> <label for="Category">Please Specify Category</label>
+                      <select name="Category" id="Category">
+                          <option value="choose here">Choose Here</option>
+                          <option value="General">General</option>
+                          <option value="OBC(Creamy Layer)">OBC(Creamy Layer)</option>
+                          <option value="OBC(Non-Creamy Layer)">OBC(Non-Creamy Layer)</option>
+                          <option value="SC/ST">SC/ST</option>
+                          <option value="PWD(person with disability)">PWD(person with disability)</option>
+                      </select>
+                  </td>
+              </tr>
+              <tr>
+                  <th>(f)</th>
+                  <th>Father’s/ Husband’s Name </th>
+                  <td><input type="text" class="input"></td>
+              </tr>
+              <tr>
+                  <th>(g)</th>
+                  <th>Permanent Address</th>
+                  <td><input type="text" class="input"> <Pincode:->Pincode:-</Pincode:-></td>
+              </tr>
+              <tr>
+                  <th>(h)</th>
+                  <th>Address for Correcpondence </th>
+                  <td><input type="text" class="input"> <Pincode:->Pincode:-</Pincode:-></td>
+  
+              </tr>
+              <tr>
+                  <th>(i)</th>
+                  <th>Email Id</th>
+                  <td aria-required="true"><input type="email">Write your Email id .</td>
+              </tr>
+              <tr>
+                  <th>(j)</th>
+                  <th>Phone number with STD code </th>
+                  <td aria-required="true"><input type="number"></td>
+              </tr>
+              <tr>
+                  <th>(k)</th>
+                  <th>Mobile Number</th>
+                  <td aria-required="true"><input type="Number"></td>
+              </tr>
+          </table>
+        </section>
+        <section>
+          <h3>21. General </h3>
+          <table>
+              <tr>
+                  <th>i. </th>
+                  <th>Are you willing to accept the initial salary of the grade </th>
+                  <td> <input type="text"> Yes/No
+                      (If no, state the minimum salary acceptable or expected, with justification for the same)</td>
+              </tr>
+              <tr>
+                  <th>ii.</th>
+                  <th>Mention period needed for joining if offered a post </th>
+                  <td><input type="text" class="input"></td>
+              </tr>
+              <tr>
+                  <th>iii.</th>
+                  <th>Are you willing to accept a lower position, which has also been advertised in the same Advertisement
+                  </th>
+                  <td> <input type="text"> Yes/No </td>
+              </tr>
+              <tr>
+                  <th>iv.</th>
+                  <th>Were you ever declared medically unfit or asked to submit resignation or discharged/ dismissed?</th>
+                  <td> <input type="text"> Yes/No
+                      If yes, give detail in a separate sheet
+                  </td>
+              </tr>
+          </table>
+          <hr>
+          <table>
+            <h3> </h3>
+              <tr>
+                  <th>22.</th>
+                  <th>References: Give the Name, designation and address, Email & Phone No. of three Referees who are
+                      acquainted with your Teaching /Research/Professional work . </th>
+              <tr>
+                  <th>I</th>
+                  <td> <input type="text" class="input"></td>
+              </tr>
+              <tr>
+                  <th>II</th>
+                  <td> <input type="text" class="input"></td>
+              </tr>
+              <tr>
+                  <th>III</th>
+                  <td> <input type="text" class="input"></td>
+              </tr>
+              </tr>
+          </table>
+        </section>
+
+        <section>
+
+        </section>
+
+      </form>
+    </div>
+    <script src="main.js"></script>
+  </body>
+</html>
